@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Metrology</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Função para o botão "Se não for você"
+            const logoutLink = document.getElementById('logout');
+            logoutLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                const confirmed = confirm('Você tem certeza que deseja sair?');
+                if (confirmed) {
+                    window.location.href = 'login.html'; // Redireciona para página de login
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+            <div class="logo d-flex align-items-center">
+                <img src="logo.png" alt="Hexagon Logo" style="width: 60px; height: auto;">
+                <h1 class="ms-2">HEXAGON METROLOGY</h1>
+            </div>
+            <nav class="top-right">
+                <a href="#" class="me-3">A Hexagon</a>
+                <a href="#" class="me-3">Rede de Distribuição</a>
+                <a href="#" class="me-3">Novidades</a>
+                <a href="#" class="me-3">Fale Conosco</a>
+                <a href="#">Ligue pra nós OXX11 5525-6015</a>
+            </nav>
+        </header>
+
+        <!-- Barra de busca e boas-vindas -->
+        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+            <div>
+                <form class="d-flex align-items-center">
+                    <label for="categoria" class="me-2 fw-bold">BUSCA</label>
+                    <select id="categoria" class="form-select form-select-sm me-2">
+                        <option value="categoria">Categoria</option>
+                        <option value="op1">Opção 1</option>
+                        <option value="op2">Opção 2</option>
+                    </select>
+                    <input type="text" class="form-control form-control-sm me-2" placeholder="TEXT FIELD 30 MAX[300]">
+                    <button type="submit" class="btn btn-outline-secondary btn-sm">OK</button>
+                </form>
+            </div>
+            <div class="welcome-bar">
+                <p>Seja bem-vindo, <span class="fw-bold">Sidney</span>. (Se não for você, <a href="#" id="logout">clique aqui</a>.)</p>
+            </div>
+        </div>
+
+        <!-- Navegação de Categorias -->
+        <nav class="nav-secondary">
+            <div class="nav-row">
+                <a href="#" class="nav-link-secondary">Altímetros</a>
+                <a href="#" class="nav-link-secondary">Bases e Acessórios</a>
+                <a href="#" class="nav-link-secondary">Blocos Padrões</a>
+                <a href="#" class="nav-link-secondary">Instrumentos para Grandes Dimensões</a>
+            </div>
+            <div class="nav-row">
+                <a href="#" class="nav-link-secondary">Medidores de Internos</a>
+                <a href="#" class="nav-link-secondary">Micrômetros para Externos</a>
+                <a href="#" class="nav-link-secondary">Paquímetros</a>
+                <a href="#" class="nav-link-secondary">Relógios Comparadores</a>
+                <a href="#" class="nav-link-secondary">Sensores LVDT</a>
+            </div>
+        </nav>
+        
+
+        <!-- Seção de Promoção -->
+        <div class="promo-banner bg-secondary text-white text-center py-5 mt-4">
+            <h2>FLASH PROMOÇÃO</h2>
+        </div>
+
+        <!-- Seção de Produtos -->
+        <section class="mt-4">
+            <div class="row">
+                <!-- Produto 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="produto1.jpg" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Chamada para que o usuário compre mais sobre o produto 1.</p>
+                            <p class="card-text"><strong>Por: R$ 1.000,00</strong></p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="produto2.jpg" class="card-img-top" alt="Produto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Chamada para que o usuário compre mais sobre o produto 2.</p>
+                            <p class="card-text"><strong>Por: R$ 1.000,00</strong></p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produto 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="produto3.jpg" class="card-img-top" alt="Produto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Chamada para que o usuário compre mais sobre o produto 3.</p>
+                            <p class="card-text"><strong>Por: R$ 1.000,00</strong></p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-5 py-3 text-center">
+            <p>Hexagon 2007 - Todos os direitos reservados</p>
+            <a href="#">Mapa do Site</a> | <a href="#">Política de Privacidade</a>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS (Opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
