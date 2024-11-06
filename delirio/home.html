@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header d-flex justify-content-between align-items-center p-3 border-bottom">
+            <div class="logo d-flex align-items-center">
+                <img src="IMAGEM RODAPÉ DE CIMA.png" alt="Hexagon Logo" style="width: 250px; height: auto;">
+            </div>
+            <nav class="top-right">
+                <a href="#" class="me-3">A Delírio</a>
+                <a href="#" class="me-3">Rede de Distribuição</a>
+                <a href="#" class="me-3">Novidades</a>
+                <a href="#" class="me-3">Fale Conosco</a>
+                <a href="#">Ligue para nós</a>
+            </nav>
+        </header>
+
+        <!-- Barra de busca e boas-vindas -->
+        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+            <div>
+                <form class="d-flex align-items-center">
+                    <label for="categoria" class="me-2 fw-bold">BUSCA</label>
+                    <select id="categoria" class="form-select form-select-sm me-2">
+                        <option value="categoria">Categoria</option>
+                        <option value="op1">Opção 1</option>
+                        <option value="op2">Opção 2</option>
+                    </select>
+                    <input type="text" class="form-control form-control-sm me-2" placeholder="TEXT FIELD 30 MAX[300]">
+                    <button type="submit" class="btn btn-outline-secondary btn-sm">OK</button>
+                </form>
+            </div>
+            <div class="welcome-bar">
+                <p>Seja bem-vindo, <span class="fw-bold">Sidney</span>. (Se não for você, <a href="#" id="logout">clique aqui</a>.)</p>
+            </div>
+        </div>
+
+        <!-- Navegação de Categorias -->
+        <nav class="nav-secondary text-center py-2 border-bottom">
+            <div class="nav-row d-flex justify-content-around">
+                <a href="#" class="nav-link-secondary">Promoções</a>
+                <a href="#" class="nav-link-secondary">Mundo Delirio</a>
+                <a href="#" class="nav-link-secondary">Brindes</a>
+                <a href="#" class="nav-link-secondary">Feedbacks de nossos clientes</a>
+            </div>
+            <div class="nav-row d-flex justify-content-around mt-2">
+                <a href="#" class="nav-link-secondary">Faça parte desse mundo</a>
+                <a href="#" class="nav-link-secondary">Duvidas sobre nós</a>
+                <a href="#" class="nav-link-secondary">Suporte</a>
+                <a href="#" class="nav-link-secondary">Produtos e Pacotes</a>
+                <a href="#" class="nav-link-secondary">Sugestões</a>
+            </div>
+        </nav>
+
+        <!-- Opções de Conta -->
+        <div class="account-options d-flex justify-content-end py-2 border-bottom">
+            <a href="#" class="me-2"><span>🛒</span> Meu Carrinho</a>
+            <span class="mx-1">|</span>
+            <a href="#" class="me-2"><span>📦</span> Meus Pedidos</a>
+            <span class="mx-1">|</span>
+            <a href="#" class="me-2"><span>👤</span> Meu Cadastro</a>
+            <span class="mx-1">|</span>
+            <a href="#"><span>🛈</span> Como Comprar</a>
+        </div>
+
+        <!-- Banner Promocional -->
+        <div class="promo-banner text-center py-5 mt-4">
+            <h2>Metodologia Inovadora</h2>
+        </div>
+
+        <!-- Produtos -->
+        <section class="mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="produto1.jpg" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Novo Produto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="produto1.jpg" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Novo Produto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="produto1.jpg" class="card-img-top" alt="Produto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Título do Produto</h5>
+                            <p class="card-text">Novo Produto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-5 py-3 text-center border-top">
+            <p>Hexagon - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
